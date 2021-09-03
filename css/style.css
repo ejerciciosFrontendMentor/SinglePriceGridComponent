@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+@media screen and (min-width: 2560px) {
+html{
+  font-size: 30px;
+}
+}
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
+  background-color: hsl(204, 43%, 93%);
+  display: grid;
+  place-items: center;
+}
+.content {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px #000;
+}
+@media screen and (min-width: 1440px) {
+  .content {
+    width: 37.5rem;
+    height: 31.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+.card {
+  width: 18.75rem;
+  height: 15.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--color1 {
+  background-color: #fff;
+}
+@media screen and (min-width: 1440px) {
+  .card--color1 {
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+.card--color2 {
+  background-color: hsl(179, 62%, 43%);
+}
+.card--color3 {
+  background-color: hsl(179, 47%, 52%);
+  padding-right: 6.875rem;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 700;
+}
+.card__title--color {
+  color: hsl(179, 62%, 43%);
+}
+@media screen and (min-width: 1440px) {
+  .card__title--color {
+   font-size: 1.5625rem;
+  }
+}
+.card__title--size {
+  font-size: 1.875rem;
+  font-family: cursive;
+  margin-right: 0.3125rem;
+}
+.card__subTitle {
+  font-size: 1.0625rem;
+  font-family: "Karla", sans-serif;
+  font-size: 400;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.card__subTitle--color {
+  color: hsl(71, 73%, 54%);
+}
+.card__info {
+  font-size: 1rem;
+  color: hsl(218, 22%, 67%);
+}
+.card__info--color {
+  color: #fff;
+}
+.card__info--colorSubTitle {
+  color: hsl(204, 43%, 93%);
+}
+.card__btn {
+  font-size: 1rem;
+  padding: 0.625rem 6.25rem;
+  border: none;
+  font-family: "Karla", sans-serif;
+  font-size: 700;
+  border-radius: 0.3125rem;
+  color: #fff;
+  box-shadow: 0 0px 0.3125rem #000;
+  background-color: hsl(71, 73%, 54%);
+}
