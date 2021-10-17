@@ -3,13 +3,13 @@
 *::after {
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 16px;
 }
 @media screen and (min-width: 2560px) {
-html{
-  font-size: 30px;
-}
+  html {
+    font-size: 30px;
+  }
 }
 body {
   margin: 0;
@@ -77,7 +77,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .card__title--color {
-   font-size: 1.5625rem;
+    font-size: 1.5625rem;
   }
 }
 .card__title--size {
@@ -116,4 +116,24 @@ body {
   color: #fff;
   box-shadow: 0 0px 0.3125rem #000;
   background-color: hsl(71, 73%, 54%);
+}
+/* footer */
+.footer {
+  padding: 0.625rem;
+  position: absolute;
+  bottom: 0;
+  font-family: sans-serif;
+}
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #000;
+}
+.attribution__link {
+  font-weight: bold;
+  color: hsl(228, 45%, 44%);
+}
+.attribution__link--name {
+  text-decoration: none;
+  color: #333;
 }
