@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 html {
@@ -31,7 +29,7 @@ position:relative;
   overflow: hidden;
   box-shadow: 0px 0px 0.1875rem #000;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .content {
     width: 37.5rem;
     height: 31.25rem;
@@ -53,7 +51,7 @@ position:relative;
 .card--color1 {
   background-color: #fff;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .card--color1 {
     grid-column: span 2;
     width: 100%;
@@ -77,7 +75,7 @@ position:relative;
 .card__title--color {
   color: hsl(179, 62%, 43%);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .card__title--color {
     font-size: 1.5625rem;
   }
